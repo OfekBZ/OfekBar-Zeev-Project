@@ -42,31 +42,7 @@ html, body {
 
 
 
-@media (max-width: 481px) {
-    .name {
-        display: none;
-    }
 
-    #nav-left {
-        padding-left: 0px;
-    }
-}
-
-@media (max-width: 991px) {
-    .name {
-        display: none;
-    }
-    .links-- {
-        text-align: right;
-        margin: 0px;
-        padding: 0px;
-        flex-direction: column-reverse;
-    }
-
-    #nav-left {
-        padding-left: 0px;
-    }
-}
 
 .name {
     font-family: "Satisfy", cursive;
@@ -317,8 +293,10 @@ main{
     background-size: contain;
     position: absolute;
     display: flex;
-    top: 0px;
-    margin-top: 254px;
+    top: 0.5%;
+    right:50%;
+    /* margin-top: 254px;
+    margin-right:250px; */
   }
 
   
@@ -367,13 +345,7 @@ main{
     padding-right: 50px;
   }
   
-  .envelop-img {
-    background-repeat: no-repeat;
-    background-size: contain;
-    position: absolute;
-    display: flex;
-    top: -250px;
-  }
+ 
   
   .final-input,
   .final-input-last {
@@ -437,6 +409,49 @@ main{
   margin: 5px 40px;
   color: #1AE0EC;
   padding-top: 13px;
+}
+
+.row{
+  margin: 0 auto;
+}
+
+@media (max-width: 481px) {
+  .name {
+      display: none;
+  }
+      .envelop-img {
+        display: none;
+     
+      }
+      #nav-left {
+        padding-left: 0px;
+    }
+  }
+
+ 
+
+
+@media (max-width: 991px) {
+  .name {
+      display: none;
+  }
+  .links-- {
+      text-align: right;
+      margin: 0px;
+      padding: 0px;
+      flex-direction: column-reverse;
+  }
+
+  #nav-left {
+      padding-left: 0px;
+  }
+  
+}
+
+@media(max-width: 991px) {
+.envelop-img{
+display: none;
+}
 }
   /*
   .card-margin{
